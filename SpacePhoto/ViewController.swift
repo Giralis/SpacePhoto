@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet var copyrightLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet var stackView: UIStackView!
     
     let photoInfoController = PhotoInfoController()
     
@@ -27,6 +28,7 @@ class ViewController: UIViewController {
             }
         }
     }
+    
     
     func updateUI(with photoInfo: PhotoInfo) {
         guard let url = photoInfo.url.withHTTPS() else { return }
